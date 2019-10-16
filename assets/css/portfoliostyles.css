@@ -1,0 +1,80 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #63b9cf93;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.containerFlex{
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work{
+    height: 300px;
+    width: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.work img{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+h2.title_appear {
+    font-size: 35px;
+}
+
+.title_appear{
+    position: absolute;
+    height: 300px;
+    padding: 10px;
+    width: auto;
+    top: 0px;
+    bottom: 0;
+    left:30px;
+    right: 30px;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility .2s;
+}
+
+ .work:hover .title_appear{
+
+
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+p.description_appear{
+    font-size: 25px;
+}
+
+.description_appear{
+    position: absolute;
+    height: 50px;
+    top: 100px;
+    left:30px;
+    right: 30px;
+    background: rgba(140, 90, 146, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility .2s;
+}
+
+ .work:hover .description_appear{
+
+    visibility: visible;
+    opacity: 1;
+  }

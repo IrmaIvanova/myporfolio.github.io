@@ -1,0 +1,159 @@
+@keyframes came-out-from-right{ 
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes came-out-from-left{ 
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+
+@keyframes blink-move-down {
+    from{
+        top: -100vh;
+        opacity: 0;
+    } 
+    50%{
+        opacity: 50%;
+    }
+    to{
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes blink{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.aboutMe {
+    animation: came-out-from-right 3s;
+    position: relative;
+    animation-delay: -1s;
+}
+
+
+.mySkills{
+
+    animation: blink-move-down 5s;
+    position: relative;
+}
+
+/* .myFoto{
+    position: relative;
+    cursor: pointer;
+    transition: 3s linear;
+}
+
+.myFoto:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  } */
+
+.button a{
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    transition: 1s;
+}
+
+.button a:before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    border: 4px solid #9d2ff780;
+    border-radius: 50%;
+    transition: 1s;
+}
+.button:hover a:before{
+    transition: 1s linear;
+    left: 5px;
+    top: 5px;
+    height: 45px;
+    width: 45px;
+    border: 4px solid #f7f6f275;
+    border-radius: 50%;
+}
+
+
+
+.button:hover a{
+    font-size: 35px;
+    transition: 1s;
+}
+
+a.btn:before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    border: 4px solid #9d2ff780;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+ul.skills li{
+    position: relative;
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+}
+.skills a{
+
+    /* background: #cfa463d3; */
+    position: absolute;
+    -webkit-transition: 1s ease; /* Safari and Chrome */
+    -moz-transition: 1s ease; /* Firefox 4 */
+    -o-transition: 1s ease;
+    
+}
+
+.skills a:hover{
+    font-size: 30px;
+    transition: 1s;
+}
+
+.skills a:before{
+    content:'';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 25px;
+    width: 25px;
+    border: 4px solid #7f68e950;
+    /* transition: 1s; */
+}
+
+.skills a:hover:before{
+    border-top: 2px solid #4eecd250;
+    border-bottom: 2px solid #4eecd250;
+    border-left: none;
+    border-right: none;
+    height: 38px;
+    width: 60px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}

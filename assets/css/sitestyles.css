@@ -1,0 +1,14 @@
+.image{
+    max-width: 1903px;
+    border-top: 3px solid #fff;
+    position: relative;
+}
+
+.image img{
+    width: 100%;
+    margin: 0 auto;
+    border-top: 3px solid white;
+    position: absolute;
+    top: -6px;
+    z-index: -1;
+}

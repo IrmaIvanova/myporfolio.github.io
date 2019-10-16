@@ -1,0 +1,147 @@
+@import url(portfoliostyles.css);
+@import url(animationstyles.css);
+
+html {
+    scroll-behavior: smooth;
+    }
+
+body{
+    font-family: 'Amatic SC', cursive;
+    font-size: 26px;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+#header {
+    display: grid;
+    grid-template-areas:
+    "portfolio aboutMe"
+    "portfolio aboutMe"
+    "mySkills mySkills";
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    grid-gap: 10px;
+}
+
+.aboutMe{
+    grid-area: aboutMe;
+    background-color:#63cf6993;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+
+}
+
+.myName{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.myPortfolio{
+    grid-area: portfolio;
+    background-color:#63b9cf93;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    position: relative;
+    animation: came-out-from-left 3s;
+    animation-delay: -1s;
+}
+
+.mySkills{
+    grid-area: mySkills;
+    background-color:#ad63cf93;
+    margin-bottom: 10px;
+}
+
+.aboutMe .myFoto img{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    border-radius: 50%;
+}
+.myFoto:hover img{
+    visibility: hidden;
+    transition: visibility 1s;
+    margin: 10px;
+}
+.myFoto{
+    position: relative;
+}
+
+img.foto_appear2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+/* .myFoto:hover img.foto_appear2{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    visibility: visible;
+    opacity: 1;
+    /* animation: blink 3s; *
+    transition: opacity 2s, visibility 2s;
+} */
+
+.fotoChange:hover img.foto_appear2{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    visibility: visible;
+    opacity: 1;
+    /* animation: blink 3s; */
+    transition: opacity 1s, visibility 1s;
+}
+
+.works img{
+    width: 25%;
+    height: 80%;
+    margin: 20px;
+}
+
+.works {
+    text-align: center;
+}
+
+.mySkills{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySkills ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mySkills ul li{
+    padding: 10px;
+    margin: 10px;
+}
+
+ul.skills {
+    margin-top: 0;
+}
