@@ -77,6 +77,12 @@ h1{
     margin: 10px;
     border-radius: 50%;
 }
+.work .myFoto img{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    border-radius: 50%;
+}
 .myFoto:hover img{
     visibility: hidden;
     transition: visibility 1s;
@@ -144,4 +150,43 @@ img.foto_appear2{
 
 ul.skills {
     margin-top: 0;
+}
+
+.ContactBox{
+    width: 194px;
+    height: 150px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    display: none;
+    background: linear-gradient(45deg, #f76e11d4, #4422ce75);
+    border: 2px solid white;
+    top: -80px;
+    position: absolute;
+    border-radius: 6%;
+    box-shadow: -1px 4px 20px 0px black;
+}
+.ContactMe_box{
+    position: relative;
+}
+
+
+
+
+.ContactBox a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.ContactBox a:active{
+    color: #fff;
+}
+
+.ContactBox a:hover{
+    color: #fff;
+}
+.ContactItem i{
+    margin-right: 10px;
 }
