@@ -6,84 +6,21 @@
     padding-top: 20px;
     padding-bottom: 50px;
 }
-.containerFlex{
-    max-width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.work:first-child{
-    background: url("../img/maket2.png");
-    background-repeat: no-repeat;
-    background-size: 250px 300px;
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 1px 20px 20px 9px #0000003b;
-}
-
-.work:nth-child(2){
-    background: url("../img/Italytrip.jpg");
-    background-repeat: no-repeat;
-    background-size: 250px 300px;
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 1px 20px 20px 9px #0000003b;
-}
-.work:nth-child(3){
-    background: url("../img/Service2.png");
-    background-repeat: no-repeat;
-    background-size: 250px 300px;
-    width: 250px;
-    height: 300px;;
-    border-radius: 10px;
-    box-shadow: 1px 20px 20px 9px #0000003b;
-}
-.work:nth-child(4){
-    background: url("../img/SmallCA.png");
-    background-repeat: no-repeat;
-    background-size: 250px 300px;
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 1px 20px 20px 9px #0000003b;
-}
-.work:nth-child(5){
-    background: url("../img/smallStripeP.png");
-    background-repeat: no-repeat;
-    background-size: 250px 300px;
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 1px 20px 20px 9px #0000003b;
-}
-.work:nth-child(6){
-    background: url("../img/joke.png");
-    background-repeat: no-repeat;
-    background-size: 250px 300px;
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 1px 20px 20px 9px #0000003b;
-}
 
 
-.work {
-    height: 300px;
-    width: 250px;
-    margin: 5px;
-    border-radius: 10px;
-    box-shadow: -7px 8px 20px 11px #00000054;
+.carousel{
+    top: -205px;
+    height: 900px!important;
+    perspective: 600px!important;
 }
 
-.work:hover{
-
-    box-shadow: -7px 8px 20px 11px #00000054;
+.carousel .carousel-item {
+    width: 400px!important;
 }
+.carousel .carousel-item img{
+    width: 300px;
+}
+
 h2.title_appear {
     font-size: 35px;
 }
@@ -91,33 +28,18 @@ h2.title_appear {
 .title_appear{
     position: absolute;
     height: 300px;
-    padding: 10px;
-    width: auto;
-    top: 0px;
+
+    width: 250px;
+    top: -29px;
     bottom: 0;
-    left:30px;
-    right: 30px;
-    background: rgba(29, 106, 154, 0.72);
-    color: #fff;
+    border-radius: 10px;
+    background: rgba(242, 227, 243, 0.79);
+    color: #4a484c;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s, visibility .2s;
 }
-.title_appear {
-    position: absolute;
-    height: 300px;
-    padding: 10px;
-    width: auto;
-    top: 0px;
-    bottom: 0;
-    left:30px;
-    right: 30px;
-    background: rgba(29, 106, 154, 0.72);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s, visibility .2s;
-}
+
  .work:hover .title_appear{
 
 
@@ -132,11 +54,13 @@ p.description_appear{
 
 .description_appear{
     position: absolute;
-    height: 50px;
-    top: 100px;
-    left:30px;
-    right: 30px;
-    background: rgba(140, 90, 146, 0.72);
+    height: 200px;
+    top: 75px;
+    left:0px;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(45deg, #f76e11d4, #4422ce75);;
     color: #fff;
     visibility: hidden;
     opacity: 0;
