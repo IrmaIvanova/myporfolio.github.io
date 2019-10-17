@@ -5,12 +5,17 @@
     /* background-color: #63b9cf93; */
     padding-top: 20px;
     padding-bottom: 50px;
+
 }
 
 
-.carousel{
+.carousel{    
+    /* background: #4a484c; */
+    left: -310px;
     top: -205px;
+    margin: 0 auto;
     height: 900px!important;
+    width: 1900px!important;
     perspective: 600px!important;
 }
 
@@ -20,7 +25,12 @@
 .carousel .carousel-item img{
     width: 300px;
 }
-
+.carousel .carousel-item a{
+    font-weight: 700;
+    font-size: 42px;
+    color: #000;
+    line-height: 1px;
+}
 h2.title_appear {
     font-size: 35px;
 }
