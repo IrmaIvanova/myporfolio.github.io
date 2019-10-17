@@ -38,7 +38,7 @@ h1{
 
 .aboutMe{
     grid-area: aboutMe;
-    background-color:#63cf6993;
+    /* background-color:#63cf6993; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ h1{
 
 .myPortfolio{
     grid-area: portfolio;
-    background-color:#63b9cf93;
+    /* background-color:#63b9cf93; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -67,7 +67,7 @@ h1{
 
 .mySkills{
     grid-area: mySkills;
-    background-color:#ad63cf93;
+    /* background-color:#ad63cf93; */
     margin-bottom: 10px;
 }
 
@@ -123,13 +123,24 @@ img.foto_appear2{
 }
 
 .works img{
-    width: 25%;
-    height: 80%;
-    margin: 20px;
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    /* transform: rotate3d(.6, .2, .8,-10deg); */
+    background: #b6b4b452;
+    box-shadow: -7px 8px 20px 11px #00000029;
+}
+
+
+.works img:hover{
+    box-shadow: -7px 8px 20px 11px #00000054;
 }
 
 .works {
     text-align: center;
+
 }
 
 .mySkills{
@@ -174,14 +185,14 @@ ul.skills {
 
 
 .button2 {
-    border: 2px solid #fff;
+    border: 2px solid rgb(34, 33, 33);;
     padding: 8px 15px;
     border-radius: 50px; 
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: rgb(34, 33, 33);;
     letter-spacing: 1.6px;
     margin-bottom: 13px;
     transition: 0.2s ease-out;
