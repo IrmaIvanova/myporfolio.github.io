@@ -65,65 +65,52 @@ h1{
     animation: came-out-from-left 3s;
     animation-delay: -1s;
 }
-.myPortfolio img{
-   
-}
+
 .mySkills{
     grid-area: mySkills;
     /* background-color:#ad63cf93; */
     margin-bottom: 10px;
 }
 
-.aboutMe .myFoto img{
+
+.work img{
     height: 300px;
     width: auto;
-    margin: 10px;
     border-radius: 50%;
 }
-.work .myFoto img{
-    height: 300px;
-    width: auto;
-    margin: 10px;
-    border-radius: 50%;
-}
-.myFoto:hover img{
-    visibility: hidden;
-    transition: visibility 1s;
-    margin: 10px;
-}
+
+
 .myFoto{
+    background: url("../img/foto2.jpg") no-repeat;
+    background-size: 250px 325px;
+    border-radius: 50%;
+    background-position: 4px -2px;
+    height: 325px;
+    width: 250px;
     position: relative;
+ 
 }
 
-img.foto_appear2{
+.myFoto:before{
+    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 10px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 2s, visibility 2s;
+    background: url("../img/photo_2019-07-25_14-56-14.jpg") no-repeat;
+    border-radius: 50%;
+    background-size: 250px 325px;
+    background-position: 0px 0px;
+    height: 325px;
+    width: 250px;
+    z-index: -1;
+    opacity: 1;
+    transition: 0.2s ease-out;
 }
 
-/* .myFoto:hover img.foto_appear2{
-    height: 300px;
-    width: auto;
-    margin: 10px;
-    visibility: visible;
+.myFoto:hover:before{
+    z-index: 2;
     opacity: 1;
-    /* animation: blink 3s; *
-    transition: opacity 2s, visibility 2s;
-} */
-
-.fotoChange:hover img.foto_appear2{
-    height: 300px;
-    width: auto;
-    margin: 10px;
-    visibility: visible;
-    opacity: 1;
-    /* animation: blink 3s; */
-    transition: opacity 1s, visibility 1s;
+    transition: 0.2s ease-out;
 }
+
 
 .works img{
     height: 250px;
@@ -170,17 +157,19 @@ ul.skills {
 }
 
 .ContactBox{
-    width: 194px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     list-style: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 10px;
+    padding-left: 10px!important;
     display: none;
     background: linear-gradient(45deg, #f76e11d4, #4422ce75);
     border: 2px solid white;
-    top: -80px;
+    top: 300px;
+    left: -200px;
     position: absolute;
     border-radius: 6%;
     box-shadow: -1px 4px 20px 0px black;
@@ -202,7 +191,9 @@ ul.skills {
     letter-spacing: 1.6px;
     margin-bottom: 13px;
     transition: 0.2s ease-out;
-
+    position: relative;
+    top: 266px;
+    left: -207px;
 }
 
 .button2:hover {
