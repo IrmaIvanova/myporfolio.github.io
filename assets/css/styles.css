@@ -154,6 +154,26 @@ ul.skills {
     margin-top: 0;
 }
 
+/* .ContactBox{
+    width: 220px;
+    height: 220px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-left: 10px!important;
+    display: none;
+    background: linear-gradient(45deg, #f76e11d4, #4422ce75);
+    border: 2px solid white;
+    top: 300px;
+    left: -200px;
+    position: absolute;
+    border-radius: 6%;
+    box-shadow: -1px 4px 20px 0px black;
+} */
+
+
 .ContactBox{
     width: 220px;
     height: 220px;
@@ -198,7 +218,41 @@ ul.skills {
     color: #55636b;
     background-color: #fff; 
 }
+.box {
 
+    width: 220px;
+    height: 0px;
+    visibility: hidden;
+    top: 300px;
+    left: -200px;
+    position: absolute;
+    background: linear-gradient(45deg, #f76e11d4, #4422ce75);
+    font-size: 1px;
+    padding: 10px;
+    padding-left: 10px!important;
+  }
+  
+  .transform {
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
+  }
+  
+  .transform-active {
+    background: linear-gradient(45deg, #f76e11d4, #4422ce75);
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 10px!important;
+    width: 220px;
+    height: 220px;
+    visibility: visible;
+    top: 300px;
+    left: -200px;
+    position: absolute;
+  }
+    
 .ContactBox a{
     text-decoration: none;
     color: #fff;

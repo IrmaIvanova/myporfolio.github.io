@@ -18,6 +18,14 @@ function funk(){
     }
 
 });
+
+$(function(){
+  $("#ContactMe").click(function() {
+    $('.transform').toggleClass('transform-active');
+  });
+});
+
+
 // $(function(){
 //     $('#moreGoogle').on('click', function(){
 //         console.log('helo');
