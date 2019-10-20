@@ -41,6 +41,7 @@
     visibility: hidden;
 
 
+
 }
  .carousel-item a:before{
      content:"";
@@ -52,13 +53,18 @@
      left: -99px;
      border-style: solid;
      visibility: hidden;
+     box-shadow: -16px 20px 20px #00000085;
+
+
  
  }
  .carousel-item:hover a:before{
      visibility: visible;
+
  }
  .carousel-item:hover a{
     visibility: visible;
+
 }
 h2.title_appear {
     font-size: 35px;
