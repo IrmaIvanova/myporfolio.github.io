@@ -14,17 +14,20 @@
     left: -310px;
     top: -275px;
     margin: 0 auto;
-    height: 900px!important;
+    height: 980px!important;
     width: 1900px!important;
     perspective: 600px!important;
 }
 
 .carousel .carousel-item {
-    width: 400px!important;
+    width: 300px!important;
 }
-.carousel .carousel-item img{
-    width: 300px;
-    box-shadow: 20px 20px 20px #00000033;
+.carousel .carousel-item>img{
+    width: 416px!important;
+    height: 550px!important;
+    overflow:hidden;
+    box-shadow: 7px 7px 18px #0000002b;
+
 }
 .carousel .carousel-item a{
     font-weight: 700;
