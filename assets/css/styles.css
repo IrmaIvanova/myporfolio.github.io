@@ -94,12 +94,16 @@ h1{
     z-index: -1;
     opacity: 1;
     transition: 0.2s ease-out;
+    box-shadow: 5px 6px 20px 0px #00000040;
+
 }
 
 .myFoto:hover:before{
     z-index: 2;
     opacity: 1;
     transition: 0.2s ease-out;
+    box-shadow: 5px 3px 20px #0000006e;
+
 }
 
 
