@@ -16,7 +16,7 @@
     margin: 0 auto;
     height: 980px!important;
     width: 1900px!important;
-    perspective: 600px!important;
+    perspective:959px!important;
 }
 
 .carousel .carousel-item {
@@ -34,6 +34,31 @@
     font-size: 42px;
     color: #000;
     line-height: 1px;
+    position: relative;
+    top: -184px;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+
+
+}
+ .carousel-item a:before{
+     content:"";
+     position: absolute;
+     border-color: transparent transparent transparent #ffffffab;
+     border-width: 550px 0 0 416px;
+     z-index: -1;
+     top: -362px;
+     left: -99px;
+     border-style: solid;
+     visibility: hidden;
+ 
+ }
+ .carousel-item:hover a:before{
+     visibility: visible;
+ }
+ .carousel-item:hover a{
+    visibility: visible;
 }
 h2.title_appear {
     font-size: 35px;
