@@ -118,3 +118,37 @@ p.description_appear{
     visibility: visible;
     opacity: 1;
   }
+  @media (max-width: 1024px){
+
+
+
+    .carousel {
+        /* background: #4a484c; */
+        left: -35px;
+        top: -125px;
+        margin: 0 auto;
+        height: 580px!important;
+        width: 890px!important;
+        perspective: 400px!important;
+    }
+    .carousel .carousel-item {
+        width: 280px!important;
+        height: 350px!important;
+    }
+    .carousel .carousel-item>img{
+        width: 180px!important;
+        height: 250px!important;
+        overflow:hidden;
+        box-shadow: 7px 7px 18px #0000002b;
+    
+    }
+    .carousel-item:hover a:before{
+        visibility: hidden;
+   
+    }
+    .carousel-item:hover a{
+       visibility: hidden;
+   
+   }
+}
+

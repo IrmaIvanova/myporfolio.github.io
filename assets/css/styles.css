@@ -264,3 +264,72 @@ ul.skills {
 .ContactItem i{
     margin-right: 10px;
 }
+
+@media (max-width: 1024px){
+
+    #header {
+        display: block;
+        height: 45vh;
+
+    }
+
+    .mySkills {
+        top: 41px;
+        left: -125px;
+    }
+
+    .mySkills ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 268px;
+        width: 164px;
+        left: 240px;
+        top: -90px;
+        position: relative;
+
+    }
+    .myPortfolio{
+        display: none;
+    }
+    .aboutMe{
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 680px){
+
+    #header {
+        width: 680px;
+        display: block;
+        height: 85vh;
+
+    }
+
+    .mySkills {
+        top: 41px;
+        left: -125px;
+    }
+    
+    .mySkills ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 268px;
+        width: 164px;
+        left: 240px;
+        top: -90px;
+        position: relative;
+
+    }
+    .myPortfolio{
+        display: none;
+    }
+    .aboutMe{
+        margin-top: 20px;
+    }
+
+
+}
