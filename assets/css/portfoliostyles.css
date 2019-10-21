@@ -11,12 +11,13 @@
 
 .carousel{    
     /* background: #4a484c; */
-    left: -310px;
+    left: -365px;
     top: -275px;
     margin: 0 auto;
     height: 980px!important;
     width: 1900px!important;
     perspective:959px!important;
+
 }
 
 .carousel .carousel-item {

@@ -61,6 +61,9 @@ h1{
     grid-area: mySkills;
     /* background-color:#ad63cf93; */
     margin-bottom: 10px;
+    position: relative;
+    z-index: 1!important;
+
 }
 
 
