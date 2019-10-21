@@ -152,3 +152,15 @@ p.description_appear{
    }
 }
 
+@media (max-width: 769px){
+
+    .carousel {
+        /* background: #4a484c; */
+        left: 28px;
+        top: -104px;
+        margin: 0 auto;
+        height: 580px!important;
+        width: 619px!important;
+        perspective: 400px!important;
+    }
+}

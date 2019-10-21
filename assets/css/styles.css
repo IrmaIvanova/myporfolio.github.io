@@ -299,6 +299,15 @@ ul.skills {
 
 }
 
+@media (max-width: 769px){
+
+    #header {
+        display: block;
+        height: 65vh;
+
+    }
+
+}
 @media (max-width: 680px){
 
     #header {
@@ -307,6 +316,7 @@ ul.skills {
         height: 85vh;
 
     }
+
 
     .mySkills {
         top: 41px;
