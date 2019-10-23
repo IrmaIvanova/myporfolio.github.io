@@ -213,18 +213,29 @@ p.description_appear{
 }
 .item a{
     font-weight: 700;
-    font-size: 42px;
+    font-size: .92em;
     color: #000;
     line-height: 1px;
     position: relative;
-    top: -83px;
-    left: 0;
+    top: -102px;
+    left: -21px;
     z-index: 1;
     visibility: hidden;
-
-
-
 }
+
+ .item a:before{
+     content:"";
+     position: absolute;
+     border-color: transparent transparent transparent #ffffffab;
+     border-width: 344px 0 0 279px;
+     z-index: -1;
+         top: -257px;
+    left: -89px;
+
+     border-style: solid;
+     visibility: hidden;
+     box-shadow: -16px 20px 20px #00000085;
+ }
 
  .item:hover a:before{
      visibility: visible;
@@ -349,8 +360,8 @@ p.description_appear{
      border-color: transparent transparent transparent #ffffffab;
      border-width: 220px 0 0 150px;
      z-index: -1;
-    top: -203px;
-    left: -74px;
+    top: -133px;
+    left: -25px;
      border-style: solid;
      visibility: hidden;
      box-shadow: -16px 20px 20px #00000085;
