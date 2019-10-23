@@ -157,8 +157,3 @@ ul.skills li{
     left: 0;
     transition: 1s;
 }
-@media (max-width: 1024px){
-    .aboutMe {
-        left: 55px;
-    }
-}
