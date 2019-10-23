@@ -1,0 +1,117 @@
+.collapsible {
+    width: 90%;
+    border:none!important;
+    box-shadow: none!important;
+    position: relative;
+}
+.collapsible-header{
+    background: rgba(255, 255, 255, 0)!important;
+}
+.collapsible-body{
+    position:absolute;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    width: 700px;
+}
+.collapsible li .collapsible-body{
+    top: 50px;
+    right: 11px;
+    padding: 28px 0 0 10px;
+}
+
+
+@media (max-width: 1024px){
+    .collapsible {
+        width: 80%;
+    }
+
+    .collapsible-body{
+        position:absolute;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        width: 700px;
+    }
+
+
+}
+@media (max-width: 798px){
+
+    .collapsible-body{
+        position:absolute;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        width: 600px;
+    }
+}
+
+@media (max-width: 648px){
+    .collapsible {
+        width: 80%;
+        font-size: 0.9em;
+    }
+
+
+
+    .collapsible-body{
+        position:absolute;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        width: 500px;
+    }
+
+
+}
+
+
+@media (max-width: 468px){
+    .collapsible {
+        width: 70%;
+        font-size: 0.9em;
+        flex-wrap: wrap;
+    }
+
+    .collapsible li .collapsible-body{
+        top: 55px;
+        left: -65px;
+        text-align: center;
+
+
+    }
+    
+
+    .collapsible-body{
+        position:absolute;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        width: 400px;
+        border-bottom: none!important;
+
+    }
+
+
+    .collapsible li:nth-child(6)  .collapsible-header{
+        border-bottom: none;
+        border-top: 1px solid #ddd;
+        top: 135px;
+        position: relative;
+
+    }
+    .collapsible li:nth-child(7)  .collapsible-header{
+        border-bottom: none;
+        border-top: 1px solid #ddd;
+        top: 135px;
+        position: relative;
+    }
+    .collapsible li:nth-child(8)  .collapsible-header{
+        border-bottom: none;
+        border-top: 1px solid #ddd;
+        top: 135px;
+        position: relative;
+    }
+}
+

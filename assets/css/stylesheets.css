@@ -12,4 +12,8 @@ body {
   font-size: 26px;
 }
 
+a.examplelink {
+  color: #007046 !important;
+}
+
 /*# sourceMappingURL=stylesheets.css.map */

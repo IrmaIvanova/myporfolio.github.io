@@ -1,7 +1,7 @@
 @import url(portfoliostyles.css);
 @import url(animationstyles.css);
 @import url(stylesheets.css);
-
+@import url(colapsible.css);
 html {
     scroll-behavior: smooth;
     }
@@ -64,8 +64,9 @@ h1{
     margin-bottom: 10px;
     position: relative;
     z-index: 1!important;
-
+    height: 400px;
 }
+
 
 
 .work img{
@@ -144,14 +145,7 @@ h1{
     justify-content: space-around;
 }
 
-.mySkills ul li{
-    padding: 10px;
-    margin: 10px;
-}
 
-ul.skills {
-    margin-top: 0;
-}
 
 /* .ContactBox{
     width: 220px;
@@ -212,7 +206,8 @@ ul.skills {
     top: 266px;
     left: -207px;
 }
-
+/* top: 303px;
+    left: -226px; */
 .button2:hover {
     color: #55636b;
     background-color: #fff; 
@@ -272,7 +267,7 @@ ul.skills {
     #header {
         width: 992px;
         display: block;
-        height: 75vh;
+        height: 85vh;
     }
     .myPortfolio {
         display: none;
@@ -365,7 +360,7 @@ ul.skills {
     #header {
         width: 645px;
         display: block;
-        height: 75vh;
+        height: 85vh;
     }
     .myName {
         transform: translate(-17px, -105px) rotate(-17deg);
@@ -409,11 +404,11 @@ ul.skills {
   }
 
   @media (max-width: 468px){
-h1 {
+    h1 {    
     font-size: 3.2rem!important;
     line-height: 90%;
+    }
 
-}
     #header {
         width: 465px;
         display: block;
@@ -429,9 +424,9 @@ h1 {
     position: relative;
     top: -14px;
         left: -13px;
-}
+    }
 
-.myFoto:before{
+    .myFoto:before{
     content: '';
     position: absolute;
     background: url("../img/photo_2019-07-25_14-56-14.jpg") no-repeat;
@@ -445,7 +440,7 @@ h1 {
     transition: 0.2s ease-out;
     box-shadow: 5px 6px 20px 0px #00000040;
 
-}
+    }
 
     .myName {
         transform: translate(16px, -80px) rotate(-17deg);
@@ -462,9 +457,7 @@ h1 {
         top: 171px;
         left: -156px;
     }
-    .mySkills {
-    width: 465px;
-}
+
     ul.skills {
         margin: 0 20px;
         width: 468px;
@@ -473,7 +466,7 @@ h1 {
     .button2:hover {
     color: #fff;
     background-color: #000;
-}
+    }
 
     .button2 {
         padding: 3px 11px;
@@ -482,21 +475,21 @@ h1 {
         left: -120px;
         font-size: 22px;
     }
-.transform-active {
-    top: 122px;
-    left: -175px;
-}
+    .transform-active {
+        top: 122px;
+        left: -175px;
+    }
 
-  }
+}
    @media (max-width: 411px){
-h1 {
+    h1 {
     font-size: 2.2rem!important;
     line-height: 50%;
 
-}
-a{
+    }
+    a{
     font-size: 22px;
-}
+    }
     #header {
         width: 355px;
         display: block;
@@ -514,7 +507,7 @@ a{
     left: -49px;
 }
 
-.myFoto:before{
+    .myFoto:before{
     content: '';
     position: absolute;
     background: url("../img/photo_2019-07-25_14-56-14.jpg") no-repeat;
@@ -528,7 +521,7 @@ a{
     transition: 0.2s ease-out;
     box-shadow: 5px 6px 20px 0px #00000040;
 
-}
+    }
 
     .myName {
         transform: translate(37px, -91px) rotate(0deg);
@@ -564,7 +557,7 @@ a{
 
     .mySkills {
     width: 390px;
-}
+    }
     ul.skills {
         margin: 0 20px;
         width: 410px;
@@ -573,7 +566,7 @@ a{
     .button2:hover {
     color: #fff;
     background-color: #000;
-}
+    }
 
     .button2 {
     padding: 2px 7px;

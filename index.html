@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -58,14 +60,51 @@
             <div class="title">
                 <h1>What I Can:</h1>
             </div>
-            <ul class=skills>
-                <li><a href="">HTML and CSS</a> </li>
-                <li><a href="">Flexbox and Grid</a></li>
-                <li><a href="">React</a></li>
-                <li><a href="">Animation</a></li>
-                <li><a href="">Bootstrap</a></li>
-                <li><a href="">Sass/Scss, Less</a></li>
-            </ul>
+            <ul class="collapsible">
+                 <li>
+                   <div class="collapsible-header"> HTML</div>
+                   <div class="collapsible-body"><span>Это типа такой стандартизированный язык разметки документов во Всемирной паутине.<br>Да-да, этот сайт-портфолио полностью написан мной на HTML. </span></div>
+                 </li>
+                 <li>
+                   <div class="collapsible-header">CSS</div>
+                   <div class="collapsible-body"><span>Ну это вроде как язык таблиц стилей, который позволяет прикреплять стиль (например, шрифты и цвет) к структурированным документам. <br>Да-да, я применяла CSS для написания этого сайта-портфолио.</span></div>
+                 </li>
+                 <li>
+                   <div class="collapsible-header">Flexbox</div>
+                   <div class="collapsible-body"><span>Flex это как бы, от слова flexible - гибкий и уступчивый. Это технология, c помощью которой  можно легко выравнивать элементы по горизонтали и по вертикали, менять направление и порядок отображение элементов и м.ч.е...
+                   <br>Всё верно так и есть, я использовала <ins>FlexBox</ins> </span></div>
+                 </li>
+                <li>
+                   <div class="collapsible-header"> Grid</div>
+                   <div class="collapsible-body"><span>CSS Grid Layout - самая мощная система компоновки из доступных на данный момент в CSS. Это двумерная система, которая может обрабатывать как колонки так и строки.
+                   <br> С помощью <ins>Grid</ins> я собрала <a class="examplelink" href="#header"><b>header</b></a> этого сайта-портфолио </span></div>
+                </li>
+                 <li>
+                   <div class="collapsible-header">React</div>
+                   <div class="collapsible-body"><span>React — JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов. 
+                   <br> Нет, я не использовала <ins>React</ins> для этого сайта-портфолио, но вот эти страницы 
+                   <a class="examplelink" href="https://irmaivanova.github.io/CodeAcademy.github.io/">CodeAcademy(copy for training)</a>, 
+                   <a class="examplelink" href="https://irmaivanova.github.io/stripe.github.io/">StripePayments(copy for training)</a> 
+                   я верстала на React</span></div>
+                 </li>
+                     <li>
+                   <div class="collapsible-header">Animation</div>
+                   <div class="collapsible-body"><span>это предлагаемый модуль для каскадных таблиц стилей, который позволяет оживить документ HTML с использованием CSS.
+                       <br> P.S: Кое-что мне удалось применить в этом портфолио</span></div>
+                 </li>
+                     <li>
+                   <div class="collapsible-header">Bootstrap</div>
+                   <div class="collapsible-body"><span>свободный набор инструментов для создания сайтов и веб-приложений.
+                       <br> В портфолио я его не использовала, решила воспользоваться <a class="examplelink" href="https://materializecss.com/about.html">Materialize</a>, люблю пробовать что-то новенькое, если есть такая возможность.
+                   </span></div>
+                 </li>
+                     <li>
+                   <div class="collapsible-header">Sass/Scss</div>
+                   <div class="collapsible-body"><span>это метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS кода и упрощения файлов каскадных таблиц стилей.
+                   <br>Всё еще разбираюсь с этой штукой. на деле проще чем данное определение</span></div>
+                </li>
+             </ul>
+  
         </div>
     </div>
 
@@ -128,7 +167,9 @@
                 $('.carousel').carousel();
             });
 
-
+              $(document).ready(function(){
+                  $('.collapsible').collapsible();
+                });
 
         </script>
     </div>

@@ -229,9 +229,8 @@ p.description_appear{
      border-color: transparent transparent transparent #ffffffab;
      border-width: 344px 0 0 279px;
      z-index: -1;
-         top: -257px;
-    left: -89px;
-
+     top: -257px;
+     left: -89px;
      border-style: solid;
      visibility: hidden;
      box-shadow: -16px 20px 20px #00000085;
