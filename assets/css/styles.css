@@ -6,9 +6,10 @@ html {
     scroll-behavior: smooth;
     }
 
-
-
-
+body{
+    margin: 0 20px!important;
+    width: 100%;
+}
 
 
 
@@ -551,8 +552,10 @@ a{
         margin: 0;
     }
     .transform-active {
-        top: 104px;
-        left: -144px;
+
+    top: 108px;
+    left: -153px;
+
         font-size: 22px;
     }
     .transform-active a{
@@ -579,9 +582,16 @@ a{
     left: -113px;
     font-size: 18px;
     }
-.transform-active {
-    top: 122px;
-    left: -175px;
-}
+
 
   }
+
+   @media (max-width: 320px){
+
+    #header {
+        width: 355px;
+        display: block;
+
+        height: 90vh;
+    }
+   }
